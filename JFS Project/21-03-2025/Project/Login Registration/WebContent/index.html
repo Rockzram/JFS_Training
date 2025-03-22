@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <head>
+            <meta charset="ISO-8859-1">
+            <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+            <title>Login Registration</title>
+            <style>
+            .center{
+				display: flex;
+				flex-direction: column;
+				justify-content: center;
+				align-items: center;
+				height: 100vh;
+				}
+			form > input , form > div{
+				margin: 5px;
+			}
+            </style>
+    </head>
+    <body>
+        <div class=center><h1>Welcome To The Login Page</h1>
+        <h2>Please Enter Your Required Details To Update The DataBase</h2>
+          <form action="Login.jsp" method="post">
+
+            <label for="Username">Email</label>
+			<br>    	
+            <input type="email" name="Usermail" id="mail" placeholder="Enter Your Mail Here" required>
+         	<br>
+            <label for="Pass">PassWord</label>
+       		<br>
+            <input type="password" name="Userpass" id="Pass" placeholder="Enter Your PassWord Here" required>
+        	<br>
+        <div>
+            <button type="submit" class="btn  btn-dark btn-primary">Submit</button>
+            <button type="reset" class="btn  btn-dark brn-primary">Reset</button>       
+        </div>
+        </form>
+        <h2>For New Users Click The Below Link To Register</h2>
+        <a href="Register.jsp">Register here</a>
+        </div>
+    </body>
+    </html>
